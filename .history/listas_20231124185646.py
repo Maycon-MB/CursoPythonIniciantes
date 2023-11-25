@@ -28,22 +28,8 @@ precos.append(10000)
 print(produtos)
 print(precos)
 
-#remover um item, tanto pelo nome (exemplo "macbook") quanto pela posição (posição -1 por exemplo, a última da lista)
+#remover um item, tanto pelo nome quanto pela posição (posição -1 por exemplo, a última da lista)
 produtos.remove("macbook")
 precos.pop(-1)
 print(produtos)
-print(precos)
-
-#inserir um valor
-produtos.insert(1, "airpod")
-print(produtos)
-
-#contar valores
-print(produtos.count("airpod"))
-
-#ordenar
-precos.sort(reverse=True) #reverse=True faz a ordem decrescente
-print(precos)
-
-precos.sort() #apenas o sort faz a ordem crescente
 print(precos)

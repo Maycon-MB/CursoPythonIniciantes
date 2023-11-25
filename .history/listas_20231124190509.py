@@ -42,8 +42,8 @@ print(produtos)
 print(produtos.count("airpod"))
 
 #ordenar
-precos.sort(reverse=True) #reverse=True faz a ordem decrescente
+precos.sort(reverse=True) #reverse
 print(precos)
 
-precos.sort() #apenas o sort faz a ordem crescente
+precos.sort()
 print(precos)
