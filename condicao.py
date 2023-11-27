@@ -62,19 +62,19 @@ print("Bônus:", bonus)
 
 # segunda maneira de fazer, só que utilizando if not
 
-if not vendas_empresa > meta_empresa:
-    bonus = 0
-else:
-    if vendas > 15000:
-        bonus = 500
-    elif vendas > 10000:
-        bonus = 150
-    elif vendas > 5000:
-        bonus = 50
-    else:
-        bonus = 0       
+# if not vendas_empresa > meta_empresa:
+#     bonus = 0
+# else:
+#     if vendas > 15000:
+#         bonus = 500
+#     elif vendas > 10000:
+#         bonus = 150
+#     elif vendas > 5000:
+#         bonus = 50
+#     else:
+#         bonus = 0       
 
-print("Bônus:", bonus)        
+# print("Bônus:", bonus)        
 
 # exercício desafios
 # sistema de consulta de preço
@@ -82,4 +82,12 @@ print("Bônus:", bonus)
 precos = [1500, 1000, 800, 2000]
 produtos = ["celular", "camera", "fone de ouvido", "monitor"]
 
-input("Digite seu produto:")
+produto_procurado = input("Digite seu produto:")
+produto_procurado = produto_procurado.lower()
+
+if produto_procurado in produtos:
+    posicao = produtos.index(produto_procurado)
+    preco = precos[posicao]
+    print(f"Produto: {produto_procurado}, Preço: {preco}")
+else:
+    print("Produto não encontrado, tente novamente")
